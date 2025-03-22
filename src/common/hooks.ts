@@ -16,7 +16,7 @@ BeforeAll(async function () {
 Before(async function () {
     context = await browser.newContext({
         recordVideo: {
-            		dir: "test-results/videos",
+            		dir: "test-result/videos",
         		},
     });
     const page = await context.newPage();
