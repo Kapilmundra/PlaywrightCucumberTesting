@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js"
+    "pretest": "npx ts-node config/cleaningReport.ts",
+    "test": "npx cucumber-js FORCE-COLOR=0  || true",
+    "posttest": "npx ts-node config/report.ts"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +13,10 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.51.1",
-    "@types/node": "^22.13.10"
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.13.10",
+    "fs-extra": "^11.3.0",
+    "multiple-cucumber-html-reporter": "^3.9.2"
   },
   "dependencies": {
     "@cucumber/cucumber": "^11.2.0",

@@ -22,4 +22,4 @@ Feature: Ebay Home Page Scenarios
       | link    | urls                                                          | title      |
       | Motors  | https://www.ebay.com/b/Auto-Parts-Accessories/6028/bn_569479 | Auto Parts |
       | Fashion | https://www.ebay.com/b/Fashion/bn_7000259856                 | Fashion    |
-      | Sports  | https://www.ebay.com/b/Sporting-Goods/888/bn_1865031         | Sporting   |
+      | Sports  | https://www.ebay.com/b/Sporting-Goods/888/bn_1865031         | Sportings   |
